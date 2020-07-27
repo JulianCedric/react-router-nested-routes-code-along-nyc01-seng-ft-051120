@@ -6,7 +6,7 @@ import {
 import NavBar from '../components/NavBar';
 import MoviesPage from './MoviesPage';
 
-class App extends Component {
+class App extends Component { 
 
   state = {
     movies: {
@@ -22,11 +22,13 @@ class App extends Component {
         <div>
           <NavBar />
           <Route exact path="/" render={() => <div>Home</div>} />
-          <Route path='/movies' render={routerProps => <MoviesPage {...routerProps} movies={this.state.movies}/>} />
+          <Route path='/movies' render={routerProps => <MoviesPage {...routerProps} movies={this.state.movies}/>} /> 
         </div>
       </Router>
     );
   }
 }
 
-export default App;
+export default App; 
+
+// re: the second 'Route' - 
